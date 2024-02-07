@@ -12,8 +12,8 @@ function QuestionList() {
     .then((questions) => setQuestions(questions));
   }, [])
   function handleDeleteQuestion(deletedQuestion){
-    const updatedItems = questions.filter((question) =>  question.id !== deletedQuestion.id)
-    setQuestions(updatedItems);
+    const updatedQuestions = questions.filter((question) =>  question.id !== deletedQuestion.id)
+    setQuestions(updatedQuestions);
     console.log(deletedQuestion);
   }
   return (
